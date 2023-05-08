@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Playlist</title>
+  <link rel="stylesheet" href="music.css">
+  <style>
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a:link, a:active{
+  color: #1DB954;
+  text-decoration: none;
+}
+
+a:visited{
+  color: lime;
+  text-decoration: underline;
+}
+
+body{
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+}
+
+main{
+  padding: 1rem;
+  background-color: black;
+  background-image: linear-gradient(rgb(0, 15, 0), rgb(10, 30, 10));
+  width: 100%;
+  min-height: 80vh;
+  flex-grow: 1;
+  
+}
+
+.first{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.first article{
+  flex: 1 1 60%;
+  min-width: 200px;
+}
+
+header{
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+}
+
+header h2{
+  background-color: black;
+  color: transparent;
+  background-image: linear-gradient(lime, limegreen);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+section.first{
+  width: 100%;
+  height: auto;
+  
+  margin: auto;
+  
+}
+
+article{
+  margin: 20px;
+  background-color: rgb(200, 220, 200);
+  color: black;
+  filter: brightness(90%);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+
+audio{
+  width: 170px;
+  margin: 5px auto;
+  color: white;
+}
+
+img{
+  width: 80%;
+  border-radius: 7px;
+}
+
+footer{
+  background-color: black;
+  bottom: 0;
+}
+
+footer img{
+  margin: 0;
+  width: 50%;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  max-width: 600px; /* set a maximum width */
+  margin: 0 auto; /* center horizontally */
+  background-color: #1DB954;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #1DB954; /* customize the control panel */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+ /* hide the default play and pause buttons */
+}
+
+.scroll{
+  background-color: transparent;
+  color: snow;
+}
+
+footer article{
+  background-color: black;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+  
+  .head h2{
+    font-size: 2em;
+  }
+  
+  audio{
+    width: 250px;
+  }
+  
+  .first, .second{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: scroll; 
+  }
+  
+  .first article{
+    flex: 1 1 40%;
+   /* animation: slide  15s 1s both linear infinite;*/
+    box-shadow: 2px 2px 10px lime;
+    min-width: 300px;
+  }
+  
+  .man img{
+    width: 60%;
+  }
+  
+  footer img{
+    width: 35%;
+  }
+  
+  
+  
+  
+}
+
+@keyframes slide{
+  0%{transform: translateX(-1300px); }
+  50%{transform: translateX(750px)}
+  100% {transform: translateX(1500px)}
+}
+  </style>
+</head>
+
+<body>
+  
+  <section class="wrapper">
+    
+    <header class="head">
+      <h2>MusicPlay</h2>
+    </header>
+    
+    <main>
+      
+      <section class="man">
+             <article class="faded">
+          <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89ldg6hTqrGBzycn2e97jlxmsj8O2RLcg7w&usqp=CAU" alt="Dax-to-be-a-man">
+          </figure>
+         <h3>To be a man</h3>
+         <h5>Dax</h5>
+         <br>
+          <audio controls>
+            <source src="https://trendybeatz.com/download-mp3/36678/dax-to-be-a-man" type="audio/mp3">
+          </audio>
+          <br>
+         <a href="https://open.spotify.com/track/5uqXEAPYnytyz9WPoXr3UR">
+           Open in Spotify</a>
+
+        </article>
+      </section>
+      
+      
+      
+      
+      <section class="first">
+        
+   
+        
+     <article class="moment">
+          <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxwsfSXlk8AGHbwoWXbjNBK1nRUG3pvuWFg&usqp=CAUg" alt="Farruko, Pepas">
+          </figure>
+         <h3>Pepas</h3>
+         <h5>Farruko</h5>
+         <br>
+          <audio src="https://open.spotify.com/track/5uqXEAPYnytyz9WPoXr3UR" width="50px" controls></audio>
+          <br>
+       <a href="https://open.spotify.com/track/5fwSHlTEWpluwOM0Sxnh5k">
+           Open in Spotify</a>
+        </article>
+        <article>
+           <figure>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-XtXe1nFqMuEnU-Zm7IPa0KXNw-vLXc2gA&usqp=CAU" alt="">
+           </figure>
+           <h3>Carry me go</h3>
+           <h5>Khaid, Boy Spyce</h5>
+           <br>
+           <audio src="https://open.spotify.com/track/7qxtOyjZ2zSaxBPH8fLyNi" controls></audio>
+           <br>
+            <a href="https://open.spotify.com/track/5fwSHlTEWpluwOM0Sxnh5k">
+           Open in Spotify</a>
+           </article>
+           
+                  <article>
+        
+         <figure>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLQSh5Qn5T60sI1PVoCbkdN6KOWxABG8QLQ&usqp=CAU" alt="">
+           </figure>
+           <h3>Faded</h3>
+           <h5>Alan Walker</h5>
+           <br>
+           <audio src="https://open.spotify.com/track/698ItKASDavgwZ3WjaWjtz" width="50px" controls></audio>
+           <br>
+          <a href="https://open.spotify.com/track/698ItKASDavgwZ3WjaWjtz">Open in Spotify</a>
+        
+       </article>
+       
+       <article>
+          <figure>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnpQj44ifByO4tKHPXQX7tp1Lf8TCXaooUQ&usqp=CAU" alt="Dance monkey">
+           </figure>
+           <h3>Dance Monkey</h3>
+           <h5>Tones and I</h5>
+           <br>
+           <audio src="https://open.spotify.com/album/31IDBea3eEs57a0joX6TjN" width="50px" controls></audio>
+           <br>
+          
+          <a href="https://open.spotify.com/album/31IDBea3eEs57a0joX6TjN">Open in Spotify</a>
+       </article>
+           
+      </section>
+      
+      <article class="scroll">
+        <h4>Scroll >>></h4>
+      </article>
+      
+     
+        
+     
+          
+    
+      
+    </main>
+    
+    <footer>
+      <h4>NetCode</h4>
+      <article class="spotify">
+        <figure>
+         <a href="https://open.spotify.com"> <img src="https://cdn.usbrandcolors.com/images/logos/spotify-logo.svg" alt="https://cdn.usbrandcolors.com/images/logos/spotify-logo.svg"></a>
+        </figure>
+      </article>
+      <article>
+      
+      <ul>
+       <li><a href="https://play.google.com/store/apps/details?id=com.spotify.music">Spotify app</a></li>
+       <li> <a href="http://pestastore.vercel.app">Shop for headphones</a></li>
+      </ul>
+    
+      </article>
+    </footer>
+    
+  </section>
+
+</body>
+
+</html>
