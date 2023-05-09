@@ -1,0 +1,86 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+background-color: limegreen;
+/*background-image: linear-gradient(white, limegreen, green);*/
+}
+
+main{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+}
+
+div:first-child {
+  background-color: floralwhite;
+  /*transform: rotatex(170deg);*/
+ /* transform: translateX(50%);*/
+ /*transform: scaleY(120%);*/
+/* transform: skewX(-10deg);*/
+}
+div:nth-child(2) {
+  background-color: yellowgreen;
+  /*transform: rotateY(45deg);*/
+  /*transform: translateY(-2rem);*/
+ /* transform: scaleX(120%);*/
+ /*transform: skewY(10deg);*/
+}
+
+div:nth-child(3) {
+  background-color: lime;
+ /* transform: skew(-10deg, -10deg);*/
+  /*transform: translate(100%, -2rem);*/
+  /*transform: rotateZ(45deg);*/
+  /*transform: scale(50%, 50%);*/
+}
+div:hover{
+  background-color: darkgreen;
+/*  transition-property: background-color, transform;
+  transition-duration: 2s, 3s;
+  transition-delay: 0.5s;*/
+  transition-timing-function: linear;
+  transition: all 2s 0.5s;
+}
+div:last-child:hover{
+  transform: rotate(180deg);
+}
+
+.animate{
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  30%{
+    transform: translateX(600px) rotate(100deg);
+  }
+}

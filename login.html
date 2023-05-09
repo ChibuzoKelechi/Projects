@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample login</title>
+  <link rel="stylesheet" href="login.css">
+  <script>
+    alert('NetCode, by Chibuzo Kelechi');
+  </script>
+  <style>
+    *{
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  background-image: linear-gradient(rgba(10, 10,30, 0.6), rgba(10,10,40,0.8)), url(https://www.apple.com/euro/macbook-air-m2/a/screens_alt/images/overview/performance/performance_speed__eubn0n9sy1qq_small_2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header{
+  text-align: center;
+  padding: 10px;
+}
+
+main{
+  flex-grow: 1;
+  min-height: 90vh;
+}
+
+form{
+  color: white;
+  padding: 10px;
+}
+
+.firstform{
+  width: 100%;
+  margin: auto;
+}
+
+input{
+  background-color: rgba(230, 230, 250, 0.2);
+  border: 1px transparent;
+  border-radius: 2px;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+
+footer{
+  background-color: rgba(10, 10, 30, 0.5);
+  background-image: linear-gradient(rgba(10, 10,20, 0.2), rgba(10,10,35,0.4));
+  bottom: 0;
+  padding: 15px;
+}
+
+label{
+ padding: 0;
+ margin-left: 10px;
+}
+
+button{
+  color: white;
+  background-color: black;
+  border: 2px transparent;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 250px;
+}
+
+img{
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  border-radius: 20%;
+  filter: brightness(110%);
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: px;
+  width: 100%;
+}
+
+.first{
+  margin-top: 50px;
+}
+
+
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <article>
+      <h2>Sign in to your account</h2>
+    </article>
+  </header>
+
+  <main>
+    
+    <section>
+      <figure class="image">
+        <img src="https://cdn.dribbble.com/users/2257782/screenshots/6657160/11.gif" alt="login-img">
+      </figure>
+    </section>
+    
+    <section class="first">
+     <article class="firstform">
+     <form action="https://freecodecamp.org" method="get">
+        <fieldset>
+          
+          <legend>Login</legend>
+          
+        <label for="first">First Name</label>
+         <input type="text" id="name" placeholder="Enter Name" autocomplete="on" minlength=""required>
+         <br>
+         <br>
+         <label for="Password">Password</label>
+        <input type="password" name="passkey" id="passkey" placeholder="Passkey" required>
+        <br>
+      <button type="submit" id="login-btn">
+        Submit</button>
+        </fieldset>
+    
+      </form>
+     </article>
+         <!--   <article>
+       Here's an example of a login form in HTML and JavaScript that checks if the user enters the passkey "apple":
+       
+       ```html
+       <form>
+        <label for="passkey">Passkey:</label>
+         <input type="password" id="passkey" name="passkey">
+     <button type="submit" id="login-btn">Login</button>
+       </form>-->
+       <article>
+         
+         <!-- HTML code for the modal box -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://cdn.dribbble.com/users/2645532/screenshots/6934828/dribble_face_id_3.gif">
+  </div>
+</div>
+
+<!-- CSS code for the modal box -->
+<style>
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Position it over the entire screen */
+  z-index: 1; /* Set its z-index to be on top of other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0,0,0,0.9); /* Black background with transparency */
+}
+
+/* Style the modal content */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Style the close button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+
+<!-- JavaScript code to show and hide the modal -->
+<script>
+// Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the close button element
+var closeBtn = modal.querySelector(".close");
+
+// When the user clicks on the close button, hide the modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+};
+
+// Show the modal when the user clicks on a button or link
+function showModal() {
+  modal.style.display = "block";
+}
+</script>
+<button onclick="showModal()">Show image</button>
+
+       </article>
+       
+<script>
+         const passkey = 'peace';
+         const loginBtn = document.getElementById('login-btn');
+       
+         loginBtn.addEventListener('click', function(event) {
+           event.preventDefault();
+           const enteredPasskey = document.getElementById('passkey').value;
+       
+           if (enteredPasskey === passkey) {
+            alert('Login successful');
+              alert('Click on \"Show image\" later');
+             window.location.href ='https://developer.mozilla.org/en-US/';
+           } else {
+             alert('Incorrect passkey');
+           }
+         });
+       </script>
+       
+       
+     <!--  This code creates a simple login form with a password input field and a submit button. When the user clicks the submit button, the JavaScript code checks if the entered passkey matches the expected passkey (in this case, "apple"). If the passkey matches, it displays an alert message saying that the login was successful. If the passkey does not match, it displays an alert message saying that the passkey is incorrect.
+       
+       Note that this is a very basic example and in practice, you would want to implement additional security measures such as encryption, rate limiting, and multi-factor authentication to ensure the security of the login system.
+     </article>-->
+    </section>
+    
+  </main>
+  
+  <footer>
+   <article>
+     <h4>By NetCode
+     <br>(powered by ChatGPT 🌚)</h4>
+   </article> 
+  </footer>
+
+</body>
+
+</html>

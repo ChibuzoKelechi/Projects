@@ -1,0 +1,639 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My brand</title>
+  <link rel="stylesheet" href="brand.css">
+  <!--<script src="/web/MyCode/brand.js"></script>-->
+  <script>
+    const name = prompt('       Enter your name', '');
+  let string = (name == 'Peace' || name == 'sopulu')? 'My friend🙃':
+  (name == 'Kelechi')? 'Welcome Boss, how can I help you today?': 
+  (name == 'Chibuzo' || name == 'Jane' || name == 'Stephen' )? 'This is my webpage.':
+  (name == 'Maxwell' || name == 'maxwell')? 'Welcome tech bro, this is my webpage': 
+  (name == 'franklin')? 'Welcome Boss/mentor, abeg review my work': 
+  
+  'Welcome to the official page of NetCode development';
+  alert(string);
+  
+  </script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+}
+:root{
+  /*font colors*/
+  --ARTBG: snow ;
+  --ARTCOLOR: black;
+  --HEADCOLOR: white;
+  --FOOTCOLOR: black;
+  --MAINCOLOR: snow;
+  --MAINBG: black;
+  /*FONT size*/
+  --HFF: 3rem;
+  --HEADFF: 5rem;
+  --FS: 1rem;
+  --FF: ;
+  /*Border*/
+  --BORDERCOLOR: transparent;
+  /*Padding*/
+  --padding: 2rem;
+  --margin: 10px;
+}
+body{
+  background-color: var(--MAINBG);
+  background-image: linear-gradient( #333, black);
+  background-repeat: no-repeat;
+  font-weight: bolder;
+}
+
+a{
+  color: var(--MAINCOLOR);
+  text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+header{
+  background-color: black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  color: snow;
+  text-align: center;
+  padding: 10px 5px 40px;
+  z-index: 1;
+}
+
+main{
+  top: 10px;
+}
+
+hr{
+  width: 70%;
+  color: darkred;
+  margin: auto;
+}
+
+footer{
+  text-align: center;
+  color: white;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+h2{
+  text-align: center;
+  
+}
+
+section{
+ margin: 1rem auto; 
+}
+
+.bg img{
+  width: 100%;
+  height: auto;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.content{
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  font-size: 2rem;
+  color: transparent;
+  font-weight: bolder;
+  background-color: white;
+  background-image: linear-gradient(to bottom right, snow, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.content img{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+}
+
+.first .firstart{
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.first .secondart{
+  color: white;
+}
+
+.secondart img{
+  height: 30vh;
+}
+
+.firstart, .secondart{
+  margin: 1rem auto;
+}
+
+section:nth-of-type(4){
+  background-color: black;
+  padding: 0.5rem;
+}
+.thirdart, .fourthart, 
+.fifthart{
+  background-color: darkred;
+  color: transparent;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, red, black);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+
+[class$="art"]{
+  height: auto;
+  width: 100%;
+  height: auto;
+  padding: var(--padding);
+  text-align: center;
+  /*border-image: linear-gradient(red, black) 20 stretch;*/
+}
+.firstart p{
+    color: transparent;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, white, whitesmoke);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+
+.second {
+  font-weight: bolder;
+  background-color: black;
+  background-image: linear-gradient(to bottom right, silver, #333 );
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.second article{
+  
+}
+
+.second li{
+  font-weight: bolder;
+}
+
+.third .no{
+  color: transparent;
+  background-color: midnightblue;
+  background-image: linear-gradient( white, darkred);
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fourth{
+  background-color: midnightblue;
+  background-image: linear-gradient( midnightblue, darkblue);
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  font-size: 1.3rem;
+}
+
+.fourth h4{
+  font-weight: bolder;
+  opacity: 0.5;
+  
+}
+
+.fourth article{
+  font-size: 1rem;
+  color: transparent;
+  background-color: midnightblue;
+  background-image: linear-gradient( white, blue);
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fifth{
+  color: transparent;
+  background-color: black;
+  background-image: linear-gradient(snow, skyblue);
+  font-size: 1.2rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.fifth-2{
+  color: transparent;
+  text-align: left;
+  background-image: linear-gradient(to bottom right, white, limegreen, green);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+
+.fifth img{
+  opacity: 0.8;
+}
+
+.fifth div{
+  position: absolute;
+  font-size: 2rem;
+  top: 50px;
+  left: 20%;
+  background-color: white;
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo);
+  background-clip: text;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+
+.sixth{
+  font-size: 2rem;
+  background-color: black;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/834/416/small/business-team-meeting-present-professional-investor-working-with-new-startup-project-finance-managers-meeting-digital-tablet-laptop-computer-design-smart-phone-using-blurred-background-free-photo.jpg);
+  color: snow;
+  text-align: center;
+padding: 1rem;
+
+}
+
+.cont{
+  position: relative;
+}
+
+.cont h2{
+  font-size: 2em;
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ li a{
+   color: white;
+ }
+  nav ul{
+    top: 0;
+  }
+  
+ nav li{
+    float: left;
+    width: 30%;
+  }
+  
+  nav li::last-of-type{
+    float: left;
+    width: 40%;
+    white-space: nowrap;
+  }
+  
+h2{
+  padding: 7px;
+}
+
+footer{
+  width: 100%;
+  opacity: 1;
+  text-align: center;
+  background-color: #333;
+}
+
+footer ul{
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+footer li a{
+  color: white;
+  float: left;
+  width: 50%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+footer h4{
+  text-decoration: underline;
+}
+
+footer img{
+  float: left;
+  width: 30%;
+  height: auto;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+  body{
+    font-size: 2rem;
+    min-width: 100%;
+  }
+  
+  header{
+    z-index: 1;
+    height: 5vh;
+    font-size: 3rem;
+    min-height: 5vh;
+    position: sticky;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  
+  .fifth-1 div{
+    font-size: 2rem;
+  }
+  
+  
+  
+  main{
+    min-height: 100vh;
+    
+  }
+  
+  section{
+    
+  }
+  
+  article{
+    width: 100%;
+  }
+  
+  h2{
+    padding: 0.5rem;
+  }
+  
+  .content{
+    font-size: 4rem;
+  }
+  
+  .content img{
+    left: 30%;
+    top: 120px;
+  }
+  
+  .third article{
+    
+  }
+
+   .thirdart, .fourthart, .fifthart{
+     padding: 0.5rem;
+     border: 2px solid transparent;
+     height: auto;
+     overflow: auto;
+     
+   }
+   
+   .thirdart{
+     padding: 0.5rem;
+   }
+   
+  [class$= "art"]{
+    
+    margin: 1rem 10px;
+    font-size: 1.5rem;
+    }
+    
+  .fifthart{
+    padding-bottom: 1rem;
+  }
+  
+  footer{
+   text-align: center;
+  }
+   
+  
+}
+
+@media (prefers-color-scheme:dark){
+  
+  body{
+    background-color: black;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+ <header>
+   
+   <nav>
+     <ul>
+      <li>
+        <a href="https://www.google.com">Google</a>
+      </li> 
+    <!--  <li>
+        <a href="https://www.playvalorant.com">Valorant</a>
+      </li>
+      <li>
+        <a href="https://m.youtube.com/c/TheNetNinja">The Net Ninja</a>
+      </li>-->
+     </ul>
+   </nav>
+ </header>
+ <main>
+   <section class="container">
+     <article class="bg" id="top">
+       <figure>
+     <img src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="coder">
+       </figure>
+     </article>
+     <article class="content">
+       <h1>NetCode</h1>
+       <figure>
+         <img src="https://pbs.twimg.com/profile_images/1650847840279871488/NV8H9J-c.jpg" alt="Victus">
+       </figure>
+     </article>
+   </section>
+   
+   <section class="first">
+     <article class="firstart">
+       
+
+  <h1>Level Up.</h1>
+  <br>
+    <p>
+    Are you looking to elevate your online presence and take your business to the next level? Look no further than our team of expert web developers!
+    <br>
+
+       </p>
+         
+       
+     </article>
+
+     <article class="secondart">
+       <h4>We are the best</h4>
+    <h2>Reasons to choose NetCode</h2>
+       <p>
+      We specialize in creating stunning and functional websites that not only look great but also deliver results. Whether you need a simple landing page or a complex e-commerce platform, we have the expertise to bring your vision to life.
+       </p>
+       
+     </article>
+   </section>
+
+       <section class="second">
+         <article class="second-art">
+          <h4>All of our services</h4>
+           <h2>
+            Business-class   
+           </h2>
+           <p>
+             <ul>
+              <li>Web development</li>
+              <li>UI/UX design</li>
+              <li>JavaScript programming</li>
+             </ul>
+           </p>
+         </article>
+         <article>
+           
+         </article>
+         <article>
+           
+         </article>
+       </section>
+
+   <section class="third">
+     <article class="cont">
+       <figure>
+         <img src="https://www.apple.com/v/macbook-pro-14-and-16/e/images/overview/performance/screen_processing__f36dk3ge7wey_small_2x.jpg" alt="laptop">
+       </figure>
+       <article>
+         <h2 class="no">Your No.1 development solution</h2>
+       </article>
+     </article>
+             <hr style="width: 100%; text-align: center;">  
+     <article class="thirdart">
+         <h2>The best</h2>  
+         
+  <h3>web development services</h3>
+<h4>For your business and personal work.</h4>
+     </article>
+          <hr style="width: 80%; color: darkred;">
+     <article class="fourthart">
+        <h2>Everything good, at one place</h2>  
+        <br>
+        <h3>
+          Frontend & backend development <br>(HTML, CSS, JavaScript, MERN).
+        </h3>
+     </article>
+          <hr style="width: 90%; text-align: center;">
+          
+       <article class="fifthart">
+    <h2>Additional services to power your business</h2>  
+        <br>
+        <h3>
+          Graphic designs, Photoshop, and typing.
+        </h3>
+     </article>
+   </section>
+   
+   
+   <section class="fourth">
+      <h4>EFFICIENCY</h4>
+     <article>
+      <h3>Amazing speed</h3>
+       <br>
+       <h2>📉<h2>
+        <br>
+       <p>
+         Our value-packed services give you the timely performance you need for everyday business and productivity.
+       </p>
+     </article>
+   </section>
+   
+   
+   <section class="fifth">
+     <article class="fifth-1">
+     <figure>
+       <img src="https://www.apple.com/v/macbook-pro-14-and-16/e/images/overview/performance/screen_all_day__do6bv6lam4cy_small_2x.jpg" alt="">
+       
+     </figure>
+     <div>
+     Pro level <br>
+     Graphic design.
+     </div>
+      </article>
+     <article class="fifth-2">
+       <p>
+         Of course, we don't just reside in web development services.<br>
+         We are also grounded in graphic design. For flyers, logos <span> Anything</span>
+       </p>
+     </article>
+   </section>
+   <section class="sixth">
+     <article>
+       <h4>
+         Wait for nothing.
+         Choose the best today.
+       </h4>
+     </article>
+   </section>
+ </main>
+ <br>
+ <br>
+ 
+ 
+ <footer>
+   <section>
+     <article>
+       🌐<h4>Address</h4>
+      
+         <p>
+           No. 21 Iheagu Nru Road,<br>
+           Nsukka.<br>
+           Enugu State
+         </p>
+     
+       <ul>
+         <li><a href="tel:+2349031651755"><img src="https://seeklogo.com/images/P/phone-logo-CA0ABEDEEB-seeklogo.com.png" alt="phone"></a></li>
+         <li><a href="+2349031651755"><img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="Whatsapp"></a></li>
+         
+       </ul>
+     </article>
+   </section>
+   <a href="#top">Back to top</a>
+ </footer>
+</body>
+
+</html>

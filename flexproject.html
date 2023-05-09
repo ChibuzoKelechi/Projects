@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox project/landing page</title>
+  <link rel="stylesheet" href="flex2.css">
+  <style>
+    *{
+  margin: 0;
+  font-weight: bold;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  font-size: 1rem;
+}
+
+.wrapper{
+  background-color: ghostwhite;
+min-height: 100vh;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 100px;
+}
+
+
+header{
+  background-color:  rgb(20, 20, 20);
+  width: 100%;
+  color: white;
+}
+
+nav{
+  background-color: ;
+}
+
+nav ul{
+  list-style-type: none;
+  width: 100;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  flex: 1 1 0;
+}
+
+
+nav li{
+  padding: 5px;
+  display: block;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+}
+
+nav li:hover{
+  background-color: #333;
+  color: white;
+}
+
+nav a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+main{
+  flex-grow: 1;
+}
+
+main article{
+  background-color: white;
+   margin-bottom: 20px;
+   padding: 5px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+main img{
+  width: 10%;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer{
+  background-color: rgb(40, 40, 40);
+  color: whitesmoke;
+}
+
+footer article{
+  text-align: center;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+footer img{
+  width: 25%;
+  height: auto;
+  padding: 4px;
+  border-radius: 50%;
+  margin-left: 25px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+article h2{
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 15px;
+  }
+  
+  h1{
+    font-size: 2em;
+  }
+
+.social{
+  text-indent: 0px;
+}
+
+.mern{
+  text-align: center;
+  padding: 1rem;
+}
+
+.mern img{
+  width: 50%;
+}
+
+.img{
+  width: 100%;
+}
+
+.level{
+  color: transparent;
+  background-color: white;
+  background-image: linear-gradient(to bottom right, lime, dodgerblue, blue);
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.pharmart, .web{
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 80%;
+}
+
+.pharmacy{
+  font-size: 1.5rem;
+}
+
+
+
+  .vp{
+    
+  }
+  
+ .end{
+    font-size: 1rem;
+  }
+  
+span{
+  color: transparent;
+  background-color: black;
+  background-image: linear-gradient(to bottom right, lime, black);
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 1.3em;
+  font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+#first-section{
+  text-align: center;
+}
+
+#second-section{
+  font-size: 1rem;
+}
+
+#skills{
+  text-align: center;
+}
+
+#skills h2{
+  font-size: 1.5em;
+}
+
+#block{
+  margin: 20px;
+}
+
+#head-section img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+  
+  body{
+    font-size: 2.5em;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  
+  nav ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1 1 0;
+  flex-flow: row;
+}
+
+  
+  nav li{
+    flex: 1 1 0;
+  }
+  
+  nav{
+    background-size: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  main img{
+   width: 30%; 
+  }
+  
+  .mern img{
+    width: 80%;
+  }
+  
+  .img{
+    width: 100%;
+  }
+  
+   .end{
+    font-size: 1.1em;
+  }
+  
+
+
+  
+  #head-section{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+    #head-section article{
+      padding: 1rem;
+    }
+    
+    #head-section h2{
+      font-size: 1.5em;
+    }
+  
+  
+  #second-section{
+     font-size: 3rem;
+}
+
+#second-section h2{
+ padding: 0;
+}
+
+
+  
+  #blocks{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  
+  article{
+    padding: 100px;
+   flex: 0 1 46%;
+   border-radius: 20px;
+  }
+  
+  footer ul{
+    margin-bottom: 20px;
+  }
+  
+  footer h2{
+    font-size: 1.5em;
+  }
+  
+  footer img{
+    margin-left: 70px;
+  }
+  
+}
+  </style>
+</head>
+
+
+<body>
+  
+ <div class="wrapper">
+<header>
+  <nav>
+    <ul>
+      <li><a href="https://www.callofduty.com/home">Call of Duty</a></li>
+      <li><a href="#foot">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+     
+
+    </ul>
+   
+  </nav>
+  </header>
+  
+  
+  <main>
+  <section id="head-section">
+    <article>
+     <img src="https://www.shutterstock.com/image-vector/alphabet-n-infinity-logo-design-260nw-2289506725.jpg" alt="netcode-logo"> 
+    </article>
+    <article>
+     <h2>NetCode+</h2> 
+     <h3 class="vp">by Chibuzo Kelechi VP.</h3>
+    </article>
+  </section>
+    <section id="first-section">
+     <article>
+      <h1 class="level">Level Up.</h1>
+  <br>
+    <p>
+       Are you looking to elevate your online presence and take your business to the next level? Look no further than our team of expert web developers
+       <br>
+
+       </p>
+         
+       
+      </article>
+    </section>
+    
+       <section id="second-section">
+      
+     <article class="pharmart">
+        <h4>Main Course</h4>
+        <br>
+        <h3 class="pharmacy">
+          PHARMACY
+        </h3>
+        <h4>University of Nigeria, Nsukka.</h4>
+        <br>
+      </article>
+      
+    </section>
+    
+    
+    <section id="skills">
+      
+      <article>
+     <h2>My Skills</h2> 
+     <h4>(...in progress)</h4>
+     </article>
+     
+    </section>
+    
+    <section>
+      <article class="web">
+        
+        <h3>Web development <h3>
+      </article>
+    </section>
+ 
+  <section id="blocks">
+
+    <article>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgo_YIJsjNdvnDAVGHtb-EEWvcmK9kadHNGw&s" alt="html-logo">
+     <h3>HTML</h3>
+     <br>
+       <p>
+        HTML is the standard markup language used for the World Wide Web(WWW) and for making webpages. It dictates the basic structure and content of the webpages.
+     </p>
+  </article>
+
+  <article>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css3-logo">
+       <h3>CSS</h3>
+       <br>
+    <p>
+      CSS is used to style webpages, adding more color and aesthetic features.
+      Cascading Style Sheets are fondly referred to as CSS. The reason for using this is to simplify the process of making web pages presentable.
+     </p>
+    </article>
+    
+     <article>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-DW_HRN0h9p0HU7tkiKE4PiuryqmVH6X9w&s" alt="JavaScript-logo">
+       <h3>Javascript</h3>
+       <br>
+    <p>
+      JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. <br>
+      It gives functionality and "life" to websites. It is a very versatile language.
+     </p>
+    </article>
+     <article class="mern">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFACB21km2MbfwSJEpMCZqOqqXBYVxoTvLw&s" alt="mern-logo">
+       <h3>MERN</h3>
+       <br>
+    <p>
+      MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack.
+      </p>
+<!--<p>
+  <ul>
+<li>MongoDB — document database</li>
+<li>Express(.js) — Node.js web framework</li>
+<li>React(.js) — a client-side JavaScript framework</li>
+<li>Node(.js) — the premier JavaScript web server.</li>
+</ul>
+     </p>-->
+    </article>
+    
+    
+  </section>
+  
+  <section id="third-section">
+    
+      <article class="fifthart">
+        <h2>Additional services to power your business</h2>
+        <br>
+        <h3>
+          Graphic designs, Photoshop, and typing.
+        </h3>
+      </article>
+    
+  </section>
+  <section class="end" >
+    <article>
+      <h3>
+        Choose the <span>BEST</span> today. 
+      </h3>
+    </article>
+  </section>
+</main>
+
+
+
+<footer id="foot">
+  <article>
+    <h4>Developed by</h4>
+    <br>
+     <h2>
+       NetCode+
+     </h2>
+  </article>
+ 
+   <ul class="social">
+      <li>
+  <a href="https://twitter.com/kelechi_chibuzo?t=gug5hDCWc4unNri0GufjlQ&s=09">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7dXAHBMYmfkq1SftgM_wGNJOLqk5uOo30JQ&s" alt="twitter-profile"></a>
+      </li>
+     <li>
+     <a href="tel:+2349031651755"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmJzwXyvDiiMwmUs5GQukbw4_FKs2m8G-9g&s" alt="phone-number"></a>
+       </li>
+        <li>
+         <a href="tel:+2349031651755"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEboGSZWC00VJ9zYA5s_kEo7stas_7Le0CYQ&s" alt="Whatsapp-number"></a>
+        </li>
+         <li>
+          <a href="mailto: kelechichibuzo7@gmail.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs8LPWxqelorZqsfGpd7mt9yB9oPA86N5ScA&s" alt="Whatsapp-number"></a>
+          </li>
+   </ul>
+</footer>
+
+</div>
+
+
+</body>
+
+
+</html>

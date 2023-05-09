@@ -1,0 +1,67 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: navy;
+  color: mediumslateblue;
+  background: url("/web/img/InCollage_20230310_205655504.jpg");
+  background-position: center;
+  background-size:200% ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p{
+color: dodgerblue;
+}
+div{
+  font-family: 'Times New Roman';
+  font-size: 23px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background: url("/web/InCollage_20230309_091540671.jpg ");
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+h2{
+  color: deepskyblue;
+}
+h3{
+  font-family: 'Lucida Sans';
+  color: deepskyblue;
+}
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  color: dodgerblue;
+}
+#first{
+  font-family: 'Times New Roman', Times, serif;
+  color: dodgerblue;
+}
+figcaption{
+  font-size: 11px;
+  color: gray;
+}
+#epic{
+  padding: 20px 30px 40px 50px;
+}
+mark{
+  color: lavender;
+  background-color: black;
+}
+table, tr, th,td, caption{
+  border-collapse: collapse;
+  border: 1px solid aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0rem;
+  font-size: 15px;
+  color: lightblue;
+  border-color: dodgerblue;
+}
+aside{
+  color: mintcream;
+}
+input{
+  background-color: lightskyblue;
+}
